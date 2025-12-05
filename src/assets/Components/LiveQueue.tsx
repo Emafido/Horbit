@@ -184,7 +184,6 @@ const LiveQueue: React.FC = () => {
 
   const updateQueueStatus = (queueData: QueuePatient[]): QueuePatient[] => {
     const updatedQueue = [...queueData];
-    const now = new Date();
   
     
     // Simulate queue progression based on time

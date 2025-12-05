@@ -22,7 +22,6 @@ const LiveQueue: React.FC = () => {
   const [queue, setQueue] = useState<QueuePatient[]>([]);
   const [doctorName, setDoctorName] = useState<string>('Dr. Smith');
   const [clinicName, setClinicName] = useState<string>("Dr. Smith's Clinic");
-  const [roomNumber, setRoomNumber] = useState<string>('Room 205');
   const [currentUserName, setCurrentUserName] = useState<string>('Alex R.');
   const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
   const navigate = useNavigate();
@@ -63,7 +62,6 @@ const LiveQueue: React.FC = () => {
   const loadQueueData = () => {
     try {
       // Get current patient's info
-      const storedUser = localStorage.getItem('clinicflow_user');
       const userFullName = localStorage.getItem('clinicflow_user_fullName');
       const firstName = localStorage.getItem('clinicflow_user_firstName');
       const lastName = localStorage.getItem('clinicflow_user_lastName');
@@ -187,11 +185,10 @@ const LiveQueue: React.FC = () => {
   const updateQueueStatus = (queueData: QueuePatient[]): QueuePatient[] => {
     const updatedQueue = [...queueData];
     const now = new Date();
-    const currentHour = now.getHours();
-    const currentMinute = now.getMinutes();
+  
     
     // Simulate queue progression based on time
-    updatedQueue.forEach((patient, index) => {
+    updatedQueue.forEach((patient) => {
       if (patient.status === 'in-session') {
         // If patient has been in session for more than 15 minutes, mark as completed
         // This is simulated - in real app this would come from server
@@ -650,7 +647,7 @@ const LiveQueue: React.FC = () => {
                   <span className="font-medium">Doctor:</span> {doctorName}
                 </p>
                 <p style={{ fontFamily: "'Inter', sans-serif" }}>
-                  <span className="font-medium">Location:</span> {clinicName}, {roomNumber}
+                  <span className="font-medium">Location:</span> {clinicName}, 
                 </p>
               </div>
             </div>

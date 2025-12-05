@@ -66,13 +66,13 @@ const Landing: React.FC = () => {
   ];
 
   return (
-    <div className="relative min-h-screen overflow-hidden font-inter">
+    <div className="relative min-h-screen  font-inter">
       {/* Full-screen background image */}
       <div className="absolute inset-0 z-0">
         <img
           src="/hero.jpg"
           alt="Modern clinic environment"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
         {/* Dark overlay for better text visibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>

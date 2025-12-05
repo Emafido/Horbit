@@ -3,27 +3,76 @@
   <head>
     <meta charset="UTF-8" />
 
-    <!-- Basic SEO -->
-    <title>Horbit — Modern Web Experience</title>
-    <meta name="description" content="Horbit is a clean, modern web application built for speed and clarity.">
-    <meta name="keywords" content="Horbit, web app, modern design">
-    <meta name="author" content="Emafido Emmanuel Aridon">
+    <!-- Primary SEO -->
+    <title>ClinicFlow — Fast, Modern & Responsive Healthcare Platform</title>
+    <meta
+      name="description"
+      content="ClinicFlow is a sleek, high-performance healthcare management web application designed for speed, clarity, and a seamless patient–doctor experience."
+    />
+    <meta
+      name="keywords"
+      content="ClinicFlow, healthcare app, clinic management system, medical software, patient queue system, doctor availability, hospital web app"
+    />
+    <meta name="author" content="Emafido Emmanuel Aridon" />
+    <link rel="canonical" href="https://clinicflow-eight.vercel.app/" />
+
+    <!-- Mobile & Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="ClinicFlow — Modern Healthcare Management" />
+    <meta
+      property="og:description"
+      content="A high-speed, modern, and intuitive healthcare management platform built for patients, doctors, and clinic operations."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clinicflow-eight.vercel.app/" />
+    <meta property="og:image" content="/hero.jpg" />
+    <meta property="og:site_name" content="ClinicFlow" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ClinicFlow — Modern Healthcare Management" />
+    <meta
+      name="twitter:description"
+      content="Experience fast loading, clean UI, and seamless clinic operations with ClinicFlow."
+    />
+    <meta name="twitter:image" content="/hero.jpg" />
+    <meta name="twitter:creator" content="@yourhandle" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="shortcut icon" href="./public/hero.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="/hero.jpg" type="image/x-icon" />
 
-    <!-- Responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Preload Main Font (Performance + SEO) -->
+    <link rel="preload" href="https://fonts.googleapis.com" as="fetch" crossorigin />
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured Data (Google Rich Results) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ClinicFlow",
+        "url": "https://clinicflow-eight.vercel.app/",
+        "description": "ClinicFlow is a modern clinic management platform built for efficiency, speed, and seamless patient-doctor interaction.",
+        "creator": {
+          "@type": "Person",
+          "name": "Emafido Emmanuel Aridon"
+        }
+      }
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

@@ -1,7 +1,7 @@
-# **Horbit: Modern Healthcare Management Platform**
+# **ClinicFlow: Modern Healthcare Management Platform**
 
 ## Overview
-Horbit is a robust and intuitive web application designed to streamline clinic and healthcare management workflows. Built with TypeScript, React, and Vite, it offers distinct interfaces for patients and doctors, facilitating efficient operations from live queue management to patient records.
+ClinicFlow is a robust and intuitive web application designed to streamline clinic and healthcare management workflows. Built with TypeScript, React, and Vite, it offers distinct interfaces for patients and doctors, facilitating efficient operations from live queue management to patient records.
 
 ## Features
 *   ✨ **Role-Based Dashboards**: Tailored interfaces for patients and doctors, ensuring relevant access and functionality.
@@ -15,17 +15,17 @@ Horbit is a robust and intuitive web application designed to streamline clinic a
 
 ## Getting Started
 
-To get Horbit up and running on your local machine, follow these steps.
+To get ClinicFlow up and running on your local machine, follow these steps.
 
 ### Installation
 
 1.  👯‍♀️ **Clone the Repository**:
     ```bash
-    git clone https://github.com/Emafido/Horbit.git
+    git clone https://github.com/Emafido/ClinicFlow.git
     ```
 2.  📂 **Navigate to the Project Directory**:
     ```bash
-    cd Horbit
+    cd ClinicFlow
     ```
 3.  📦 **Install Dependencies**:
     ```bash
@@ -58,7 +58,7 @@ To get Horbit up and running on your local machine, follow these steps.
 
 ## Usage
 
-Horbit provides a user-friendly interface for various roles within a healthcare setting. Upon launching the application:
+ClinicFlow provides a user-friendly interface for various roles within a healthcare setting. Upon launching the application:
 
 *   **Landing Page**: The root path `/` serves as the entry point, likely providing an overview or options to navigate.
 *   **Authentication**: Access the `/signin` route to log in. Depending on your credentials, you will be redirected to either the patient or doctor dashboard.
@@ -85,7 +85,7 @@ Horbit provides a user-friendly interface for various roles within a healthcare 
 
 ## Contributing
 
-We welcome contributions to Horbit! To contribute, please follow these guidelines:
+We welcome contributions to ClinicFlow! To contribute, please follow these guidelines:
 
 *   📥 **Fork the Repository**: Start by forking the project to your GitHub account.
 *   🌿 **Create a New Branch**: For each new feature or bug fix, create a dedicated branch.

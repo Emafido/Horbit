@@ -19,7 +19,6 @@ import {
   Plus,
   AlertCircle,
   UserCheck,
-  Activity,
   Menu,
   X,
   Home,

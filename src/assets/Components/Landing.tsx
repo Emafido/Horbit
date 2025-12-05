@@ -7,8 +7,6 @@ import {
   Calendar,
   Shield,
   Smartphone,
-  Users,
-  FileText,
   Lock,
   CheckCircle,
 } from "lucide-react";

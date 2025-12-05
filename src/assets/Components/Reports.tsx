@@ -1,9 +1,8 @@
 // pages/ReportsPage.tsx
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState,  useMemo } from "react";
 import {
   BarChart3,
   PieChart,
-  TrendingUp,
   Download,
   Filter,
   Calendar,
@@ -18,7 +17,6 @@ import {
   Eye,
   Search,
   BarChart,
-  LineChart,
   Activity,
 } from "lucide-react";
 

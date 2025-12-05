@@ -1,5 +1,5 @@
 // pages/PatientsPage.tsx
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useMemo } from "react";
 import {
   Search,
   Filter,
@@ -7,9 +7,7 @@ import {
   Phone,
   Mail,
   Calendar,
-  ChevronRight,
   Plus,
-  MoreVertical,
   Edit,
   Trash2,
   Eye,
@@ -164,7 +162,6 @@ const PatientsPage: React.FC = () => {
     const total = patients.length;
     const active = patients.filter((p) => p.status === "active").length;
     const pending = patients.filter((p) => p.status === "pending").length;
-    const inactive = patients.filter((p) => p.status === "inactive").length;
     const newThisMonth = patients.filter((p) => {
       const lastVisit = new Date(p.lastVisit);
       const now = new Date();

@@ -15,7 +15,6 @@ import DoctorAvailability from "./assets/Components/DoctorAvailability";
 import PatientsPage from "./assets/Components/patients";
 import SettingsPage from "./assets/Components/Settings";
 import ReportsPage from "./assets/Components/Reports";
-import Features from "./assets/Components/Features";
 import "./App.css";
 
 const Loader = () => {
@@ -68,7 +67,6 @@ function AppContent() {
         <Route path="/patients" element={<PatientsPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/reports" element={<ReportsPage />} />
-        <Route path="/features" element={<Features />} />
       </Routes>
     </>
   );
